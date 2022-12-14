@@ -5,9 +5,9 @@
 # rename your context if necessary
 
 gloo_mesh_version=${1:-"2.1.2"}
-environment_overlay=${2:-"base"} # base, m1
+environment_overlay=${2:-"ocp"} # base, m1
 cluster_context=${3:-cluster1}
 mgmt_context=${4:-mgmt}
 github_username=${5:-ably77}
 repo_name=${6:-aoa-cluster1}
-target_branch=${7:-HEAD}
+target_branch=${7:-ocp}
