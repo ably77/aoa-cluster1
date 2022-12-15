@@ -5,9 +5,9 @@ kind: Kustomization
 # list of resources to be Applied
 resources:
 - ../../base/active/
+- istio-eastwest-ns.yaml
 
 patchesStrategicMerge:
-- patches/istio-eastwest-ns.yaml
 - patches/istio-gateways-ns.yaml
 - patches/bookinfo-backends-ns.yaml
 - patches/bookinfo-frontends-ns.yaml
