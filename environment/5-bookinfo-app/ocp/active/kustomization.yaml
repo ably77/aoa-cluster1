@@ -6,3 +6,35 @@ kind: Kustomization
 resources:
 - ../../base/active/
 - nad.yaml
+
+patchesJson6902:
+- path: patch/runasuser-uid-patch.yaml
+  target:
+    group: apps
+    kind: Deployment
+    name: productpage-v1
+    version: v1
+- path: patch/runasuser-uid-patch.yaml
+  target:
+    group: apps
+    kind: Deployment
+    name: details-v1
+    version: v1
+- path: patch/runasuser-uid-patch.yaml
+  target:
+    group: apps
+    kind: Deployment
+    name: ratings-v1
+    version: v1
+- path: patch/runasuser-uid-patch.yaml
+  target:
+    group: apps
+    kind: Deployment
+    name: reviews-v1
+    version: v1
+- path: patch/runasuser-uid-patch.yaml
+  target:
+    group: apps
+    kind: Deployment
+    name: reviews-v2
+    version: v1
